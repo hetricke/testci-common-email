@@ -15,4 +15,6 @@ jobs:
           distribution: 'temurin'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
+        
+      - name: Run Clean Test
         run: mvn clean test
